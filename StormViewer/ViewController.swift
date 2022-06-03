@@ -14,6 +14,9 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Storm viewer"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
         // Load images
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
